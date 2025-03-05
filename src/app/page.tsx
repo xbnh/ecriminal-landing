@@ -1,8 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
-import { RingLoader, MoonLoader } from "react-spinners";
 import "./globals.css";
-import {Ring, Orbit} from "@uiball/loaders";
+import {Orbit} from "@uiball/loaders";
 
 
 export default function Home() {
@@ -40,8 +39,8 @@ export default function Home() {
           {/* Switch between different loaders here */}
           <Orbit color="white" size={35} />
           <p className="text-lg text-white text-center tracking-wide opacity-0 animate-fadeInText mt-4">
-            We're just checking if your request is not malicious.<br />
-            Don't worry; it'll only take a couple of seconds.
+            We&apos;re just checking if your request is not malicious.<br />
+            Don&apos;t worry; it&apos;ll only take a couple of seconds.
           </p>
         </div>
       ) : (
