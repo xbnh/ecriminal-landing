@@ -33,7 +33,7 @@ export default function Home() {
 
     const currentWord = options[optionIndex];
 
-    let interval;
+    let interval: NodeJS.Timeout | undefined;
     if (!isDeleting && charIndex <= currentWord.length) {
       interval = setTimeout(() => {
         setCurrentText(currentWord.substring(0, charIndex + 1));
