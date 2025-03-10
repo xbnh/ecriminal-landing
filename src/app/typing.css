@@ -1,0 +1,19 @@
+.typing-effect_text {
+    display: inline-block; /* Or block, depending on your layout needs */
+    font-size: 1.2rem;
+    color: #ccc; /* Gray text color */
+    /* optional: width, max-width, text-align, etc. */
+  }
+  
+  /* Each character starts invisible and fades in one by one */
+  .typing-effect_text span {
+    opacity: 0;
+    animation: fadeIn 0.05s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

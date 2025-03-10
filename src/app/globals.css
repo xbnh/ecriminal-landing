@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .font-bebas {
   font-family: 'Bebas Neue', sans-serif;
@@ -21,7 +22,8 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevents unwanted scrolling */
+  overflow: auto; /* Prevents unwanted scrolling */
+  scroll-behavior: smooth;
 }
 
 /* Add this CSS animation in your globals.css */
@@ -45,3 +47,28 @@ html, body {
 .animate-glitch {
   animation: glitch 0.2s infinite alternate;
 }
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
